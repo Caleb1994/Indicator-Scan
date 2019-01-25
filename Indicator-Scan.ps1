@@ -1,4 +1,4 @@
-<#
+ <#
 .SYNOPSIS
     Scans the given hosts for the given file, registry, and network indicators of compromise.
 
@@ -44,7 +44,7 @@
     https://github.com/Caleb1994/Indicator-Scan
 
 .EXAMPLE
-    Indicator-Scan -targets 10.10.10.5,10.10.10.38 -net network-iocs.txt -file file-iocs.txt -reg registry-iocs.txt
+    Indicator-Scan -targets 10.10.10.5,10.10.10.38 -net network-iocs.txt -file file-iocs.txt -reg registry-iocs.txt | Format-Table host,net,file,reg
     Scans 10.10.10.5 and 10.10.10.38 for the given network, file and registry indicators of compromise.
 #>
 param (
